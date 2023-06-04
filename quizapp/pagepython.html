@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ-Python</title>
+    <link rel="stylesheet" href="bootstrape.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/pgpython.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="header">
+                    <img src="images/logo.22bf709605809177256c.png" alt="">
+                    <h1>QUIZ APP</h1>
+                    <span class="ant-typography text_english page_header_text">Services - Education -
+                        Registration</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="row">
+                <h1 class="main-heading">Python <span>(1 Subject)</span></h1>
+            </div>
+        </div>
+
+<div class="row">
+    <div class="col ">
+   <div class="mainSelectBox-cont" id="testDetails">
+    <div class="mainSelectBox">
+        <p>Python</p>
+     </div>
+     <div class="optionSelectBox">
+         <p>Quiz #01</p>
+                 <!-- quiz details -->
+                 <table class="table quiz-detail-table">
+                    <thead>
+               <td colspan="2"></td>
+                        <tr>
+                            <th>Quiz name</th>
+                            <td>Python Quiz#01</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Total questions</th>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <th>Total time</th>
+                            <td>40 mins</td>
+                        </tr>
+                        <tr>
+                            <th>Passing score</th>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button onclick="enterKeyPython()" class="theme-btn"
+                                    style="opacity: 1;">Continue</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                 <!-- quiz details end -->
+   
+     </div>
+        
+
+   </div>
+    </div>
+
+    <div class="keydiv hidden " id="keyDiv">
+        <input class="keyInput" placeholder="Enter test key" type="text" name=""  id="testKey">
+    <button onclick="sumbitKeyPython()" class="theme-btn">Submit</button>
+    </div>
+    <div class="incorrect hidden " id="incorrectDiv">
+        <p>Incorrect test key, Please enter correct  key!</p>
+    </div>
+</div>
+ 
+        <!--  -->
+       
+        
+        <!--  -->
+    </div>
+
+
+    <!-- scripts -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/b4fc311639.js" crossorigin="anonymous"></script>
+    <script src="bootstrape.js"></script>
+</body>
