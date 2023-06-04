@@ -29,6 +29,7 @@ function sumbitKeyPython() {
     console.log(key);
     if(validateKey(key)){
         console.log("success");
+        window.location.href ="./testpages/"
         // python test
         // python test
     } else {
@@ -51,6 +52,7 @@ function sumbitKeyHTML(){
     console.log(key);
     if(validateKey(key)){
         console.log("success");
+        window.location.href ="testpages/htmltest.html"
         // html test
         // html test
     } else {

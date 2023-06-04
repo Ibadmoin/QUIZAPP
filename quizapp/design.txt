@@ -1,3 +1,5 @@
 blue : #0066b3  secondary color
 green : #8ec73d primary color
 
+bg : #f0f2f5;
+
