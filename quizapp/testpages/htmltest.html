@@ -7,43 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ-HTML</title>
     <link rel="stylesheet" href="../css/test.css">
-    <link rel="stylesheet" href="bootstrape.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrape.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
     <div class="container">
+        <div class="headerimg"><img src="../images/images.png" alt=""></div>
      <div class="main">
         <div class="row ">
             <div class="col black">
                 <div class="testCard">
-                    <h4 id="question" class="question">What is html stand for?</h4>
-                   <div class="answer" >
-                    <label id="answer1">
-                    <input type="radio" name="answer"   > 
+                   <span class="questionNumber" id="SN">1</span> <h4 id="question" class="question">What is html stand for?</h4>
+          <label  class="answer">
+            <input type="radio" name="answer" value="1">
+           <span id="answer1"></span>
+          </label>
+          <label class="answer">
+            <input type="radio" name="answer" value="2">
+           <span id="answer2"></span>
+          </label>
+          <label class="answer">
+            <input type="radio" name="answer" value="3">
+           <span id="answer3"></span>
+          </label>
+          <label class="answer">
+            <input type="radio" name="answer" value="4">
+           <span id="answer4"></span>
+          </label>
 
-                    </label>
-                   </div>
-                   <div class="answer" >
-                    <label id="answer2">
-                    <input type="radio" name="answer"   > 
-
-                    </label>
-                   </div>
-                   <div class="answer" >
-                    <label id="answer3">
-                    <input type="radio" name="answer"   > 
-
-                    </label>
-                   </div>
-                   <div class="answer" >
-                    <label id="answer4">
-                    <input type="radio" name="answer"   > 
-
-                    </label>
-                   </div>
-          
-                   <button class="theme-btn"  onclick="nextques()">NEXT</button>
+                  
+                    
+            
+                   <button class="theme-btn"  id="nextBtn"  onclick="nextques()">NEXT</button>
                   
                 </div>
             </div>
@@ -54,7 +50,7 @@
 
 
     <!-- scripts -->
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
     <script src="test.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/b4fc311639.js" crossorigin="anonymous"></script>

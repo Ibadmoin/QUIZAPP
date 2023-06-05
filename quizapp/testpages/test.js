@@ -148,24 +148,80 @@ var html = [
     }
 ]
 var index = 0;
+var qCount = 1;
+var score = 0;
 var question = document.getElementById("question");
+var input = document.getElementsByName("answer");
 var option1 = document.getElementById("answer1");
 var option2 = document.getElementById("answer2");
 var option3 = document.getElementById("answer3");
 var option4 = document.getElementById("answer4");
-
+var questionNum = document.getElementById("SN");
+var nextBtn = document.getElementById("nextBtn")
 nextques()
+for (var i = 0; i < input.length; i++) {
+    input[i].addEventListener('change', function() {
+      updateNextBtnState();
+    })};
 function nextques(){
 
+    if(input.value === html[index].correctOption){
+        score++;
 
-    question.innerText = "";
-    question.innerText = html[index].question;
-    option1.innerText =  html[index].option1;
-    option2.innerText = html[index].option2;
-    option3.innerText = html[index].option3;
-    option4.innerText = html[index].option4;
-    index++;
+        
+    }
+
+    
+    if(index === html.length -1 ){
+        console.log("question End")
+
+        var result = ((score / index) *100)+"%";
+        console.log( result , score  , index )
+        alert("your result is" + " "+ result   + "...kam chal raha hai");
+        // show result
+    } else {
+        
+        question.innerText = "";
+        questionNum.innerHTML = "Q"+ qCount;
+        question.innerHTML = html[index].question;
+        option1.innerText =  html[index].option1;
+        option2.innerText = html[index].option2;
+        option3.innerText = html[index].option3;
+        option4.innerText = html[index].option4;
+        input.checked = false;
+        index++;
+        qCount++;
+        unCheckRadioBtn();
+        
+     
+   
+        
+  
+
+
+
+
+    }
+ updateNextBtnState();
     
 }
-console.log(question , option1 , option2 , option3 ,option4)
+
+// to check the value of 
+function updateNextBtnState() {
+    for (var i = 0; i < input.length; i++) {
+      if (input[i].checked) {
+        nextBtn.disabled = false;
+        // console.log(input[i].value);
+        return;
+      }
+    }
+    nextBtn.disabled = true;
+  }
+// unchecking radio btns on every question
+function unCheckRadioBtn(){
+    for(var i = 0; i < input.length; i++){
+        input[i].checked = false;
+    }
+ 
+}
 

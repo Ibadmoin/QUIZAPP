@@ -10,7 +10,9 @@ body{
     width: 100%;
    height:100%;
    display: flex;
+   flex-direction: column;
    align-items: center;
+   gap: 50px;
 }
 .main{
 
@@ -29,7 +31,7 @@ body{
     background: white;
     min-height: 450px;
     height: 100%;
-    width: 50%;
+    width: 80%;
     padding: 30px;
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -39,7 +41,7 @@ body{
     color: black;
     font-family: sans-serif;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 55px;
   
 }
 
@@ -49,9 +51,16 @@ body{
     margin-bottom: 10px;
     height: 100%;
     min-height: 50px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
+    width: 90%;
+    word-wrap: break-word;
 }
+@media screen and (max-width: 768px) {
+    .answer {
+      white-space: normal;
+    }
+  }
 
 
 .theme-btn{
@@ -69,3 +78,33 @@ body{
   .theme-btn:hover{
     background: #79aa35;
   }
+
+  label{
+    display: block;
+}
+
+.answer{
+    font-size: 1.5em;
+    word-wrap: break-word;
+}
+
+.questionNumber{
+    position: relative;
+    top: 59px;
+    left: 5px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.headerimg{
+    width: 280px;
+    height: 130px;
+    margin: 0 auto;
+}
+.headerimg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* note : fix header images */
